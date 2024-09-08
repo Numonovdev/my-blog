@@ -1,0 +1,126 @@
+*{
+     padding: 0;
+     margin: 0;
+}
+body{
+     font-family: "Exo", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+     color: springgreen;
+     background-color: #000;
+}
+.container{
+     box-sizing: border-box;
+     margin: 80px auto 0;
+     max-width: 1200px;
+     width: 100%;
+     display: flex;
+     height: 500px;
+     justify-content: space-between;
+     /* background-color: aliceblue; */
+}
+nav{
+     width: 8%;
+     height: 100%;
+     /* background-color: aqua; */
+     margin-left: 10px;
+     padding-top: 20px;
+     box-sizing: border-box;
+     display: flex;
+     gap: 30px;
+     flex-direction: column;
+
+}
+section{
+     width: 40%;
+     height: 100%;
+     box-sizing: border-box;
+     border: 1px solid springgreen;
+     /* background-color: aqua; */
+     display: flex;
+     flex-direction: column;
+     position: relative;
+}
+section::before{
+     content: "";
+     width: 300px;
+     height: 300px;
+     left: 100px;
+     background-color: #000;
+     position: absolute;
+     z-index: 100;
+     animation: root infinite linear 3s;
+}
+@keyframes root {
+     0%   {background-color: #000;}
+     /* 25%   {background-color: #000;} */
+     50%  {background-color: transparent;}
+     100%   {background-color: #000;}
+}
+.linkss{
+     display: flex;
+     flex-direction: column;
+}
+
+.links{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+.links p{
+     display: inline;
+}
+/* maqola */
+article{
+     width: 55%;
+     height: 95%;
+     z-index: -1;
+     /* background-color: yellow; */
+     border: 1px solid springgreen;
+     border-right: none;
+     display: flex;
+     flex-direction: column;
+     margin-top: 20px;
+     box-sizing: border-box;
+}
+.about{
+     width: 100%;
+     height: 100%;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 10px;
+}
+.about img{
+     width: 200px;
+     border-radius: 20px;
+     margin-bottom: 10px;
+}
+.about h2{
+     margin-bottom: 20px;
+}
+/* nav bar box */
+.box{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 70px;
+     box-sizing: border-box;
+     padding: 2px;
+     border: 1px solid springgreen;
+     /* background-color: tomato; */
+}
+.box i{
+     font-size: 25px;
+} 
+.boxs{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     gap: 10px;
+}
